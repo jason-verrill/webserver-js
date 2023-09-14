@@ -19,7 +19,7 @@ const server = http.createServer( function (req, res) {
 // Load HTML files then start the server
 fsp.readFile('./hello_world.html', 'utf-8')
 .then(data => {
-	html = data
+	helloHTML = data
 	server.listen(port, host)
 })
 .catch(err => {
